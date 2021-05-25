@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/toolbar_notification"
+        android:orderInCategory="100"
+        android:title="cart"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:iconTint="#ffffff"
+
+        />
+
+    <item
+        android:id="@+id/toolbar_cart"
+        android:orderInCategory="100"
+        android:title="cart"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:iconTint="#ffffff"
+       />
+
+
+
+
+
+</menu>

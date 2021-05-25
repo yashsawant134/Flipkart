@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_slider_banner"
+            app:sliderScrollTimeInSec="4"
+            app:sliderStartAutoCycle="true"
+            app:sliderAutoCycleDirection="right"
+            app:sliderIndicatorPadding="4dp"
+            app:sliderIndicatorRadius="1.5dp"
+            app:sliderIndicatorSelectedColor="#414243"
+            app:sliderIndicatorUnselectedColor="#F8FAFB"
+            app:sliderAnimationDuration="1000"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

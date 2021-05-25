@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductsDetailActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_of_ProductDetails_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        //////Scrollview Start
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F1EEEE">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/product_imges_slider" />
+                    <include layout="@layout/product_details_highlights"/>
+                    <include layout="@layout/deliver_to_layout_of_product_details_activity"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        //////Scrollview End
+
+
+
+        //////Bottom Add to cart And Buy now button
+        <LinearLayout
+            android:id="@+id/buybutton_linearlayout"
+            android:layout_width="match_parent"
+            android:background="@drawable/corners"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:elevation="6dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:id="@+id/add_to_cart_button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD TO CART"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#FB511B"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:id="@+id/buynow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BUY NOW"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        //////Bottom Add to cart And Buy now button End
+
+
+    </LinearLayout>
+
+////////Product Images Zoom linear layout visibility gone
+    <LinearLayout
+        android:id="@+id/zoom_product_images_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/zoom_product_images_viewpager"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/zoom_product_images_slider_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:animateLayoutChanges="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_images_viewpagerlinearlayout"
+            app:tabBackground="@drawable/productimage_slider_dots"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@null"
+
+            />
+
+
+    </LinearLayout>
+    ////////Product Images Zoom linear layout visibility gone End
+</androidx.constraintlayout.widget.ConstraintLayout>

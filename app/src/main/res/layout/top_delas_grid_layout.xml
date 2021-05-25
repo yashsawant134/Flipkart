@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="11dp"
+    android:paddingLeft="11dp"
+    android:paddingBottom="20dp"
+    android:background="#9FD1FA"
+    android:layout_marginTop="4dp"
+    android:id="@+id/topDealsBgColor">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_delas_viewall_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="View all"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/corners"
+        />
+
+
+    <TextView
+        android:id="@+id/top_delas_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="Top Deals"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/top_delas_viewall_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_delas_viewall_btn" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_delas_viewall_btn"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="6dp"
+        android:elevation="6dp">
+
+   <GridView
+       android:layout_width="380dp"
+       android:layout_height="349dp"
+       android:numColumns="2"
+       android:horizontalSpacing="2dp"
+       android:verticalSpacing="2dp"
+       android:background="#DBDDDF"
+       android:id="@+id/top_deals_grid_view"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

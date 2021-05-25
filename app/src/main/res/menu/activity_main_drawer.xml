@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/main_sidenav_menu">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+            android:title="Coupens" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="My Cart" />
+
+        <item
+            android:id="@+id/My_wishlist"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="My Wishlist" />
+
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="My Account" />
+
+
+    </group>
+
+    <group android:id="@+id/bottom_sidenav_menu">
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/Privacy_Policy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Sign Out"
+            />
+
+
+
+    </group>
+</menu>

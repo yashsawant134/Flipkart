@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context=".SelectAddress">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="7dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel"
+                app:tint="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:text="Select Dilevery Address"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#CCCACA" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/corners"
+            android:orientation="vertical"
+            android:paddingLeft="9dp"
+            android:paddingTop="11dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="11dp"
+            android:id="@+id/address">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yash Sawant , 400042"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:id="@+id/selectaddressname"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_check_24"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="asdasdsad d dasdasdadasds dsd asd asd d sd s dsada sdas das dasd sd asd  sd"
+                android:textSize="13sp"
+                android:id="@+id/selectaddess_address"/>
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="ADD ADDRESS"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners"
+            android:id="@+id/addaddress"/>
+
+
+    </LinearLayout>
+</FrameLayout>
